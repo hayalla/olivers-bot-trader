@@ -6,7 +6,7 @@ module.exports = {
     const settingsId = await queryInterface.rawSelect('settings', { where: {}, limit: 1 }, ['id']);
     if (!settingsId) {
       return queryInterface.bulkInsert('settings', [{
-        email: 'contato@luiztools.com.br',
+        email: 'hayallarubens60@gmail.com',
         password: bcrypt.hashSync('123456'),
         phone: null,
         sendGridKey: null,

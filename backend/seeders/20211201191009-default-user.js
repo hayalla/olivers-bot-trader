@@ -10,8 +10,8 @@ module.exports = {
     if (!userId) {
       const limitId = await queryInterface.rawSelect('limits', { where: {}, limit: 1 }, ['id']);
       return queryInterface.bulkInsert('users', [{
-        name: 'Luiz Duarte',
-        email: process.env.DEFAULT_EMAIL,
+        name: 'Hayalla',
+        email: process.env.DEFAULT_SETTINGS_EMAIL,
         password: bcrypt.hashSync('123456'),
         limitId,
         isActive: true,
